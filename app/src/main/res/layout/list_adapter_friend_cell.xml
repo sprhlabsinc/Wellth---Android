@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipeLayout"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:tag="Bottom4"
+        android:id="@+id/bottom_wrapper_2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/delete_but"
+            android:layout_width="80dp"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_rect"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:ignore="UselessParent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <agency.tango.android.avatarview.views.AvatarView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    app:av_border_color="@android:color/white"
+                    app:av_border_width="2dp"
+                    app:av_text_size_percentage="35"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+                <LinearLayout
+                    android:layout_toRightOf="@id/img_avatar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    tools:ignore="RtlHardcoded">
+                    <TextView
+                        android:id="@+id/txt_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sergey K."
+                        android:textSize="16sp"
+                        android:textColor="@color/colorDefault"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/txt_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25, United Kingdom"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/darker_gray"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/txt_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age: 25"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/darker_gray"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <Button
+                    android:layout_centerVertical="true"
+                    android:id="@+id/btn_health_issue"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14sp"
+                    android:text="Health issues"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDefault"
+                    android:background="@drawable/rounded_edittext"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

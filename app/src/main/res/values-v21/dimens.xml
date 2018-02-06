@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">60dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="slide_title">32sp</dimen>
+    <dimen name="slide_desc">18sp</dimen>
+    <dimen name="desc_padding">50dp</dimen>
+
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_middle">14sp</dimen>
+    <dimen name="font_large">20sp</dimen>
+
+    <dimen name="tab_icon_size">50dp</dimen>
+    <dimen name="tab_icon_padding">15dp</dimen>
+
+    <dimen name="default_home_header_height">135dp</dimen>
+    <dimen name="default_forum_header_height">170dp</dimen>
+    <dimen name="default_add_friend_header_height">105dp</dimen>
+    <dimen name="default_friend_request_header_height">55dp</dimen>
+    <dimen name="default_profile_header_height">150dp</dimen>
+</resources>

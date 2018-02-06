@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.AnswerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="ScrollViewSize">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <agency.tango.android.avatarview.views.AvatarView
+                        android:id="@+id/img_avatar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        app:av_border_color="@android:color/white"
+                        app:av_border_width="2dp"
+                        app:av_text_size_percentage="35"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/img_avatar"
+                        android:orientation="vertical"
+                        tools:ignore="RtlHardcoded">
+
+                        <TextView
+                            android:id="@+id/txt_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sergey K."
+                            android:textColor="@color/colorDefault"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/txt_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25, United Kingdom"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/txt_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age: 25"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_question_mark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q )"
+                        android:layout_centerVertical="true"
+                        android:textSize="26sp"
+                        android:textColor="@color/colorDefault"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/txt_question_mark"
+                        android:id="@+id/txt_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Can Diabetes be controlled with treatment?"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorDefault"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/rounded_rect"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    tools:ignore="UselessParent">
+                    <EditText
+                        android:id="@+id/edit_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dip"
+                        android:textSize="16sp"
+                        android:hint="Write ...\n\n\n\n\n\n\n"
+                        android:inputType="textMultiLine"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+                    <Button
+                        android:id="@+id/btn_image"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:textSize="14sp"
+                        android:text="Take Image"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorDefault"
+                        android:background="@drawable/rounded_greycolor"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                    <Button
+                        android:id="@+id/btn_video"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="40dp"
+                        android:layout_toRightOf="@id/btn_image"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14sp"
+                        android:text="Take Video"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorDefault"
+                        android:background="@drawable/rounded_greycolor"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </RelativeLayout>
+                <Button
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/btn_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/btn_image"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14sp"
+                    android:text="Post"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/colorPrimary"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded,UnusedAttribute" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

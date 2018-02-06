@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.Activity.HealthIssueActivity"
+    tools:showIn="@layout/activity_health">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Health or body issue you have"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorDefault"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/healthissue_desc"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorDefault"
+                tools:ignore="HardcodedText"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="100dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+                    <EditText
+                        android:id="@+id/edit_health_issue1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dip"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="eg : Hairfall"
+                        android:inputType="text"
+                        tools:ignore="HardcodedText" />
+                    <ImageView
+                        android:id="@+id/img_check1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/ic_check_mark_1"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="UselessParent">
+                    <EditText
+                        android:id="@+id/edit_health_issue2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dip"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="eg : Hairfall"
+                        android:inputType="text"
+                        tools:ignore="HardcodedText" />
+                    <ImageView
+                        android:id="@+id/img_check2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/ic_check_mark_1"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="UselessParent">
+                    <EditText
+                        android:id="@+id/edit_health_issue3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dip"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="eg : Hairfall"
+                        android:inputType="text"
+                        tools:ignore="HardcodedText" />
+                    <ImageView
+                        android:id="@+id/img_check3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/ic_check_mark_1"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="UselessParent">
+                    <EditText
+                        android:id="@+id/edit_health_issue4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dip"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="eg : Hairfall"
+                        android:inputType="text"
+                        tools:ignore="HardcodedText" />
+                    <ImageView
+                        android:id="@+id/img_check4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/ic_check_mark_1"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="UselessParent">
+                    <EditText
+                        android:id="@+id/edit_health_issue5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dip"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="eg : Hairfall"
+                        android:inputType="text"
+                        tools:ignore="HardcodedText" />
+                    <ImageView
+                        android:id="@+id/img_check5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/ic_check_mark_1"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_centerInParent="true"
+                    tools:ignore="ObsoleteLayoutParam,UselessParent">
+                    <Button
+                        android:id="@+id/btn_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:text="Add more"
+                        android:padding="12dip"
+                        android:textSize="16sp"
+                        android:gravity="left"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorDefault"
+                        android:textColorHint="@android:color/darker_gray"
+                        tools:ignore="Deprecated,HardcodedText,RtlHardcoded,TextViewEdits" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_question"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

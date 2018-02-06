@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_none"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="collapseActionView|ifRoom"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/action_setting"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_settings"
+        android:title="Setting"
+        app:showAsAction="collapseActionView|ifRoom"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="100"
+        android:title="Edit Profile"
+        app:showAsAction="collapseActionView|ifRoom"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/action_privacy"
+        android:orderInCategory="100"
+        android:title="Privacy Policy"
+        app:showAsAction="collapseActionView|ifRoom"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/action_terms"
+        android:orderInCategory="100"
+        android:title="Terms and Conditions"
+        app:showAsAction="collapseActionView|ifRoom"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/action_contact"
+        android:orderInCategory="100"
+        android:title="Contact"
+        app:showAsAction="collapseActionView|ifRoom"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Log Out"
+        app:showAsAction="collapseActionView|ifRoom"
+        tools:ignore="HardcodedText" />
+</menu>

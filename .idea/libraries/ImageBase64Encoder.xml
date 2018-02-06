@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ImageBase64Encoder">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/ImageBase64Encoder.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

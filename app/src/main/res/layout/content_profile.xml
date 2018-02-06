@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.Activity.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <agency.tango.android.avatarview.views.AvatarView
+                        android:id="@+id/img_avatar"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        app:av_border_color="@android:color/white"
+                        app:av_border_width="2dp"
+                        app:av_text_size_percentage="35"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:hint="Email"
+                android:editable="false"
+                android:inputType="textEmailAddress"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_action_mail_outline"
+                tools:ignore="Deprecated,HardcodedText" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_action_person"
+                tools:ignore="HardcodedText" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_action_lock"
+                tools:ignore="HardcodedText" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_action_check_circle"
+                tools:ignore="HardcodedText" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                tools:ignore="RtlHardcoded">
+                <Button
+                    android:id="@+id/btn_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Country (Optional)"
+                    android:padding="12dip"
+                    android:gravity="left"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="50dp"
+                    tools:ignore="Deprecated,HardcodedText,RtlHardcoded,TextViewEdits" />
+                <ImageButton
+                    android:id="@+id/btn_country_why"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_question"
+                    android:background="@android:color/transparent"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                tools:ignore="RtlHardcoded">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edit_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dp"
+                    android:hint="Age (Optional)"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText" />
+                <ImageButton
+                    android:id="@+id/btn_age_why"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_question"
+                    android:background="@android:color/transparent"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:text="Update Profile"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

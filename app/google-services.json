@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "10159075778",
+    "firebase_url": "https://wellth-6ff4f.firebaseio.com",
+    "project_id": "wellth-6ff4f",
+    "storage_bucket": "wellth-6ff4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10159075778:android:6bdf6453b342be03",
+        "android_client_info": {
+          "package_name": "com.wellth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10159075778-v6768lbb8tdakoa6j5ed88ckc998amt5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wellth",
+            "certificate_hash": "d885ac4ecaad3a270f5d4cc2f11c3a37392060ef"
+          }
+        },
+        {
+          "client_id": "10159075778-d6n382mohgjcleqvipud4k26s4pd723p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTFrIYLrYYkvC5e4MCM_8mBZhDDyAqWy8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10159075778-d6n382mohgjcleqvipud4k26s4pd723p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

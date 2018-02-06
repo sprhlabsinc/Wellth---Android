@@ -1,0 +1,264 @@
+<resources>
+    <string name="app_name">Wellth</string>
+
+    <string name="slide_1_title">Welcome</string>
+    <string name="slide_1_desc">Wellth helps you connect and share with people who have same health issues or body issues as you.</string>
+
+    <string name="slide_2_title"></string>
+    <string name="slide_2_desc">You can ask a question or share your knowledge, experiences about any health or body issue with your health friends or just Post an uplifting Image/Video.</string>
+    
+    <string name="healthissue_desc">Adding health and body issues will help you connect with people who have same health issues.\n\n</string>
+
+    <string name="home">Home</string>
+    <string name="public_forum">Forum</string>
+    <string name="add_friends">Friends</string>
+    <string name="friends_requests">Requests</string>
+    <string name="profile">Profile</string>
+
+    <string name="terms_and_contents">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="health_issue">Health or body issues</string>
+    <string name="ask_question">Ask a question</string>
+    <string name="answer_question">Answer a question</string>
+    <string name="comment_post">Post a Comment</string>
+    <string name="share_uplifting">Share an uplifting</string>
+    <string name="details">Details</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="health_friends">Health Friends</string>
+
+    <string name="country_why">You will have more chance of being accepted by people of your city/country.</string>
+    <string name="age_why">You will have more chance of being accepted by people of similar age.</string>
+    <string name="add_more">You can add more health issues in profile page.</string>
+
+    <!-- Message list -->
+    <string name="message_like_success">Thanks for your like!</string>
+    <string name="message_like_exist">You have already liked.</string>
+    <string name="message_invite_success">Request sent successfully!</string>
+    <string name="message_invite_exist">We both are already friends.</string>
+    <string name="message_sent_invite">You already sent request.</string>
+    <string name="message_not_exist_health_issue">Please add one health issue at least.</string>
+    <string name="message_request_accept">You just accepted request.</string>
+    <string name="message_request_cancel">You just canceled request.</string>
+    <string name="message_profile_update_success">Profile updated successfully!</string>
+    <string name="message_profile_image_changed">Profile image changed.</string>
+
+    <string name="message_empty_home_feeds">Add Health Friends and start sharing all about Health and Body issues.</string>
+    <string name="message_empty_profile_posts">You haven\'t shared any posts yet.</string>
+    <string name="message_empty_profile_questions">You haven\'t asked any questions yet.</string>
+
+    <string name="update_profile">update_profile</string>
+    <string name="update_request">update_request</string>
+    <string name="update_post_real_time">update_post_real_time</string>
+    <string name="create_post_real_time">create_post_real_time</string>
+    <string name="click_notification">click_notification</string>
+
+    <string name="parse_server_live_url">wss://wellth.back4app.io</string>
+    <string name="parse_server_url">https://parseapi.back4app.com/</string>
+    <string name="parse_app_id">Lgk1swICG2ohVVoXJilOskFPTrLlLHe4rOrQQ9KN</string>
+    <string name="parse_client_key">0mLrs1ngYFgkeDPBucLivCoQOvTiAit5AIPBHkcO</string>
+
+    <!--<string name="facebook_app_id">1650791844932037</string>-->
+    <!--<string name="facebook_security_key">cea380547fb4f64721e3fadb5f327f8b</string>-->
+    <string name="facebook_app_id">526629117677018</string>
+    <string name="fb_login_protocol_scheme">fb526629117677018</string>
+
+    <!--time ago-->
+    <string name="date_util_term_less">less than</string>
+    <string name="date_util_term_a">a</string>
+    <string name="date_util_term_an">an</string>
+
+    <string name="date_util_unit_second">second</string>
+    <string name="date_util_unit_seconds">seconds</string>
+    <string name="date_util_unit_minute">minute</string>
+    <string name="date_util_unit_minutes">minutes</string>
+    <string name="date_util_unit_hour">hour</string>
+    <string name="date_util_unit_hours">hours</string>
+    <string name="date_util_unit_day">day</string>
+    <string name="date_util_unit_days">days</string>
+    <string name="date_util_unit_month">month</string>
+    <string name="date_util_unit_months">months</string>
+    <string name="date_util_unit_year">year</string>
+    <string name="date_util_unit_years">years</string>
+
+    <string name="date_util_prefix_lt">less than a</string>
+    <string name="date_util_prefix_about">about</string>
+    <string name="date_util_prefix_over">over</string>
+    <string name="date_util_prefix_almost">almost</string>
+
+    <string name="date_util_suffix">ago</string>
+
+    <string name="privacy">Innorise Online Services Private Limited ("us", "we", or "our") operates the Wellth mobile application (the "Service"). \n\n
+
+This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service. \n\n
+
+We will not use or share your information with anyone except as described in this Privacy Policy. \n\n
+
+We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions. \n\n
+
+Information Collection And Use \n
+-------------------------------------------- \n
+
+While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. \n
+Personally identifiable information may include, but is not limited to, your email address, name, phone number, postal address, other information ("Personal Information"). \n\n
+
+Log Data \n
+------------- \n\n
+
+When you access the Service by or through a mobile device, we may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile device unique ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browser you use and other statistics ("Log Data"). \n\n
+
+In addition, we may use third party services such as Google Analytics that collect, monitor and analyze this type of information in order to increase our Service\'s functionality. These third party service providers have their own privacy policies addressing how they use such information. \n\n
+
+Cookies \n
+----------- \n\n
+
+Cookies are files with small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and stored on your computer\'s hard drive. \n\n
+
+We use "cookies" to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service. \n\n
+
+Service Providers \n
+------------------------ \n\n
+
+We may employ third party companies and individuals to facilitate our Service, to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used. \n\n
+
+These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose. \n\n
+
+Compliance With Laws \n
+-------------------------------- \n\n
+
+We will disclose your Personal Information where required to do so by law or subpoena or if we believe that such action is necessary to comply with the law and the reasonable requests of law enforcement or to protect the security or integrity of our Service. \n\n
+
+Business Transaction \n
+------------------------------ \n\n
+
+If Innorise Online Services Private Limited is involved in a merger, acquisition or asset sale, your Personal Information may be transferred. We will provide notice before your Personal Information is transferred and becomes subject to a different Privacy Policy. \n\n
+
+Security \n
+------------ \n\n
+
+The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security. \n\n
+
+International Transfer \n
+------------------------------- \n\n
+
+Your information, including Personal Information, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction. \n\n
+
+If you are located outside India and choose to provide information to us, please note that we transfer the information, including Personal Information, to India and process it there. \n\n
+
+Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer. \n\n
+
+Links To Other Sites \n
+---------------------------- \n\n
+
+Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party\'s site. We strongly advise you to review the Privacy Policy of every site you visit. \n\n
+
+We have no control over, and assume no responsibility for the content, privacy policies or practices of any third party sites or services. \n\n
+
+Children\'s Privacy \n
+------------------------- \n\n
+
+Our Service does not address anyone under the age of 13 ("Children"). \n\n
+
+We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your Children has provided us with Personal Information, please contact us. If we become aware that we have collected Personal Information from a children under age 13 without verification of parental consent, we take steps to remove that information from our servers. \n\n
+
+Changes To This Privacy Policy \n
+------------------------------------------- \n\n
+
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. \n\n
+
+You are advised to review this Privacy Policy periodically for any changes. \n
+Changes to this Privacy Policy are effective when they are posted on this page. \n\n
+
+Contact Us \n
+---------------- \n\n
+
+If you have any questions about this Privacy Policy, please contact us. \n\n\n
+
+</string>
+
+    <string name="terms">These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with Wellth mobile application (the "Service") operated by Innorise Online Services Private Limited ("us", "we", or "our"). \n\n
+
+Please read these Terms and Conditions carefully before using our Wellth mobile application (the "Service"). \n\n
+
+Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service. \n\n
+
+By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. \n\n
+
+Content \n
+------------ \n\n
+
+Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material ("Content"). You are responsible for the Content that you post to the Service, including its legality, reliability, and appropriateness. \n\n
+
+The content posted is for general informational use only and is not intended to be a substitute for professional medical advice,diagnosis or treatment. Always seek the advice of your physician or other qualified health provider with any question you may have regarding a medical condition. \n\n
+
+By posting Content to the Service, you grant us the right and license to use, modify, publicly perform, publicly display, reproduce, and distribute such Content on and through the Service. You retain any and all of your rights to any Content you submit, post or display on or through the Service and you are responsible for protecting those rights. You agree that this license includes the right for us to make your Content available to other users of the Service, who may also use your Content subject to these Terms. \n\n
+
+You represent and warrant that: (i) the Content is yours (you own it) or you have the right to use it and grant us the rights and license as provided in these Terms, and (ii) the posting of your Content on or through the Service does not violate the privacy rights, publicity rights, copyrights, contract rights or any other rights of any person. \n\n
+
+Accounts \n
+------------- \n\n
+
+When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service. \n\n
+
+You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service. \n\n
+
+You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account. \n\n
+
+You may not use as a username the name of another person or entity or that is not lawfully available for use, a name or trade mark that is subject to any rights of another person or entity other than you without appropriate authorization, or a name that is otherwise offensive, vulgar or obscene. \n\n
+
+Intellectual Property \n
+----------------------------- \n\n
+
+The Service and its original content (excluding Content provided by users), features and functionality are and will remain the exclusive property of Innorise Online Services Private Limited and its licensors. The Service is protected by copyright, trademark, and other laws of both the India and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Innorise Online Services Private Limited. \n\n
+
+Links To Other Web Sites \n
+----------------------------------- \n\n
+
+Our Service may contain links to third-party web sites or services that are not owned or controlled by Innorise Online Services Private Limited. \n\n
+
+Innorise Online Services Private Limited has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Innorise Online Services Private Limited shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services. \n\n
+
+We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit. \n\n
+
+Termination \n
+------------------ \n\n
+
+We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. \n\n
+
+Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service. \n\n
+
+Limitation Of Liability \n
+------------------------------ \n\n
+
+In no event shall Innorise Online Services Private Limited, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose. \n\n
+
+Disclaimer \n
+--------------- \n\n
+
+Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance. \n\n
+
+Innorise Online Services Private Limited its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements. \n\n
+
+Governing Law \n
+--------------------- \n\n
+
+These Terms shall be governed and construed in accordance with the laws of Karnataka, India, without regard to its conflict of law provisions. \n\n
+
+Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service. \n\n
+
+Changes \n
+------------- \n\n
+
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. \n\n
+
+By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service. \n\n
+
+Contact Us \n
+---------------- \n\n
+
+If you have any questions about these Terms, please contact us. \n\n\n
+    </string>
+</resources>

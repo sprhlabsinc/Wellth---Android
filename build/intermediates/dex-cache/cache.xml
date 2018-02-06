@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="F:\1_Android\17_Wellth\Wellth\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4bc869e0a2bdb0386682b8e7bf2a6e54851fe4ba">
+        <dex dex="F:\1_Android\17_Wellth\Wellth\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_28ab97861efb29f12451bd05dcc0d1bc53b2964e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\1_Android\17_Wellth\Wellth\app\libs\ImageBase64Encoder.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="63acf287fc4ae8ad3bd4e5561d254ed89412b981">
+        <dex dex="F:\1_Android\17_Wellth\Wellth\app\build\intermediates\transforms\dex\debug\folders\1000\2\ImageBase64Encoder_c0103a8380b32beace57e8b08c36af61fde2ed65\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\1_Android\17_Wellth\Wellth\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="F:\1_Android\17_Wellth\Wellth\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c1e4b1dabebf2a876d2fbd91a22bc327b5b3fc05\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\1_Android\17_Wellth\Wellth\app\libs\parse-android-1.13.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5f645bf60e3b88ccc02bd2a4018c5e3ef2f77d0a">
+        <dex dex="F:\1_Android\17_Wellth\Wellth\app\build\intermediates\transforms\dex\debug\folders\1000\2\parse-android-1.13.1_f20c7c7633ec20add612e76dc435db44d5177e19\classes.dex" />
+    </item>
+
+</items>

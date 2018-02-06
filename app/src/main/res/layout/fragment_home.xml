@@ -1,0 +1,170 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragment.HomeFragment"
+    android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            tools:ignore="UselessLeaf">
+
+            <RelativeLayout
+                android:id="@+id/layout_ask_question"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        tools:ignore="RtlHardcoded">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="Ask a Question!"
+                            android:textColor="@color/colorDefault"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageButton
+                            android:id="@+id/btn_post"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_arrow_pointing_to_right"
+                            android:background="@drawable/rounded_button"
+                            android:backgroundTint="@color/colorFacebook"
+                            tools:ignore="ContentDescription,RtlHardcoded,UnusedAttribute" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp">
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="or share an uplifting"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText" />
+
+                        <LinearLayout
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            tools:ignore="RtlHardcoded">
+                            <Button
+                                android:id="@+id/btn_image"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/rounded_edittext"
+                                android:text="image"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorDefault"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="or"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+
+                            <Button
+                                android:id="@+id/btn_video"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/rounded_edittext"
+                                android:text="video"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorDefault"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <agency.tango.android.avatarview.views.AvatarView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    app:av_border_color="@android:color/white"
+                    app:av_border_width="2dp"
+                    app:av_text_size_percentage="35"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.github.ksoichiro.android.observablescrollview.TouchInterceptionFrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rotate_header_list_view_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cube_ptr:ptr_duration_to_close="200"
+                cube_ptr:ptr_duration_to_close_header="1000"
+                cube_ptr:ptr_keep_header_when_refresh="true"
+                cube_ptr:ptr_pull_to_fresh="false"
+                cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+                cube_ptr:ptr_resistance="1.7">
+
+                <com.github.ksoichiro.android.observablescrollview.ObservableListView
+                    android:id="@+id/list_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null" />
+            </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+            <TextView
+                android:id="@+id/txt_empty_message"
+                android:layout_marginTop="100dp"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/message_empty_home_feeds"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/colorDefault"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </com.github.ksoichiro.android.observablescrollview.TouchInterceptionFrameLayout>
+</FrameLayout>

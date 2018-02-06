@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipeLayout"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:tag="Bottom4"
+        android:id="@+id/bottom_wrapper_2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/edit_but"
+            android:layout_width="80dp"
+            android:text="Edit"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_height="match_parent"
+            tools:ignore="ButtonStyle,HardcodedText" />
+        <Button
+            android:id="@+id/delete_but"
+            android:layout_width="80dp"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/txt_title"
+                android:text="Headache"
+                android:textSize="16sp"
+                android:textColor="@color/colorDefault"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <ImageView
+                android:id="@+id/img_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_check_mark"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

@@ -1,0 +1,234 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragment.ProfileFragment"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <RelativeLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary">
+            <agency.tango.android.avatarview.views.AvatarView
+                android:id="@+id/img_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                app:av_border_color="@android:color/white"
+                app:av_border_width="2dp"
+                app:av_text_size_percentage="35"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+            <LinearLayout
+                android:layout_toRightOf="@id/img_avatar"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="140dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sergey K."
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/txt_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25, United Kingdom"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/txt_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age: 25"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    tools:ignore="RtlHardcoded">
+                    <Button
+                        android:id="@+id/btn_friends"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:textSize="14sp"
+                        android:text="Health friends"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorDefault"
+                        android:background="@drawable/rounded_edittext"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/btn_health_issue"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14sp"
+                        android:text="Health issues"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorDefault"
+                        android:background="@drawable/rounded_edittext"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_friend_badge"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFF"
+                    android:textSize="12sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/badge_circle"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+                <TextView
+                    android:id="@+id/txt_issue_badge"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFF"
+                    android:textSize="12sp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/badge_circle"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/layout_profile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/btn_posts"
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:text="Show posts"
+                android:textAllCaps="false"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorDefault"
+                android:background="@drawable/rounded_edittext"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+            <Button
+                android:id="@+id/btn_questions"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:text="Questions"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/btn_posts"
+                android:textAllCaps="false"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorDefault"
+                android:background="@drawable/rounded_greycolor"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.github.ksoichiro.android.observablescrollview.TouchInterceptionFrameLayout
+        android:id="@+id/container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rotate_header_list_view_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="1000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.7">
+
+            <com.github.ksoichiro.android.observablescrollview.ObservableListView
+                android:id="@+id/list_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" />
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+        <TextView
+            android:id="@+id/txt_empty_message_question"
+            android:layout_marginTop="100dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/message_empty_profile_questions"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/colorDefault"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </com.github.ksoichiro.android.observablescrollview.TouchInterceptionFrameLayout>
+    <RelativeLayout
+        android:id="@+id/layout_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="165dp">
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rotate_header_grid_view_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="1000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.7">
+            <GridView
+                android:id="@+id/grid_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="105dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="0dp"
+                android:stretchMode="spacingWidthUniform"/>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+        <TextView
+            android:id="@+id/txt_empty_message_post"
+            android:layout_marginTop="85dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/message_empty_profile_posts"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/colorDefault"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+</FrameLayout>

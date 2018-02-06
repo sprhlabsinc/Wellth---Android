@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded,UseCompoundDrawables">
+            <agency.tango.android.avatarview.views.AvatarView
+                android:id="@+id/img_avatar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:av_border_color="@android:color/white"
+                app:av_border_width="2dp"
+                app:av_text_size_percentage="35"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+            <TextView
+                android:id="@+id/txt_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1/20"
+                android:textSize="12sp"
+                android:textColor="@color/colorDefault"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/txt_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="3dp"
+            expandableTextView:maxCollapsedLines="3"
+            expandableTextView:animDuration="200"
+            tools:ignore="RtlHardcoded">
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes, it can be controlled with proper threat..."
+                android:textSize="12sp"
+                android:textColor="@color/colorDefault"
+                tools:ignore="HardcodedText" />
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="right|bottom"
+                android:background="@android:color/transparent"
+                tools:ignore="ContentDescription" />
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+        <TextView
+            android:id="@+id/txt_post_time"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="30 minutes ago"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:textColor="@android:color/darker_gray"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+
+</RelativeLayout>

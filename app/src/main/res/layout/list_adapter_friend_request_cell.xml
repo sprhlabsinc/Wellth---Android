@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <agency.tango.android.avatarview.views.AvatarView
+                android:id="@+id/img_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                app:av_border_color="@android:color/white"
+                app:av_border_width="2dp"
+                app:av_text_size_percentage="35"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+            <LinearLayout
+                android:layout_toRightOf="@id/img_avatar"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sergey K."
+                    android:textSize="16sp"
+                    android:textColor="@color/colorDefault"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/txt_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25, United Kingdom"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/txt_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age: 25"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_accept"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:text="Accept"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorDefault"
+                android:background="@drawable/rounded_greycolor"
+                tools:ignore="ButtonOrder,HardcodedText,RtlHardcoded" />
+            <Button
+                android:layout_toLeftOf="@id/btn_cancel"
+                android:id="@+id/btn_health_issue"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:text="Health Issues"
+                android:textAllCaps="false"
+                android:textColor="@color/colorDefault"
+                android:background="@drawable/rounded_greycolor"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

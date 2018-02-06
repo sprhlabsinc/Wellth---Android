@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/layout_wrapper"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <agency.tango.android.avatarview.views.AvatarView
+                android:id="@+id/img_avatar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                app:av_border_color="@android:color/white"
+                app:av_border_width="2dp"
+                app:av_text_size_percentage="35"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+            <LinearLayout
+                android:layout_toRightOf="@id/img_avatar"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sergey K."
+                    android:textSize="14sp"
+                    android:textColor="@color/colorDefault"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/txt_post_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="35 min ago"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="DuplicateIds,HardcodedText" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txt_answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0 Answers"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/view_line"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/layout_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <cn.jzvd.JZVideoPlayerStandard
+                android:id="@+id/videoplayer"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"/>
+
+            <ImageView
+                android:id="@+id/img_attachment"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loading"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_question_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q )"
+                android:textSize="26sp"
+                android:textColor="@color/colorDefault"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_toRightOf="@id/txt_question_mark"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+                <TextView
+                    android:id="@+id/txt_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginRight="50dp"
+                    android:text="Can Diabetes be controlled with treatment?"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorDefault"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txt_like"
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <ImageView
+                android:layout_toLeftOf="@id/txt_like"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_comment"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+                <agency.tango.android.avatarview.views.AvatarView
+                    android:id="@+id/img_avatar_user"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:av_border_color="@android:color/white"
+                    app:av_border_width="2dp"
+                    app:av_text_size_percentage="35"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+                <TextView
+                    android:id="@+id/txt_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1/20"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorDefault"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txt_answer"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:text="Yes, it can be controlled with proper threat..."
+                android:textSize="12sp"
+                android:textColor="@color/colorDefault"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <TextView
+                android:id="@+id/txt_post_time_user"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="30 minutes ago"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:textColor="@android:color/darker_gray"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/layout_more"
+            android:visibility="gone"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/btn_more"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="View More"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:textAllCaps="false"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <ImageButton
+                android:id="@+id/btn_like"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_like_1"
+                android:background="@drawable/rounded_greycolor"
+                tools:ignore="ContentDescription" />
+            <ImageButton
+                android:id="@+id/btn_share"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_share_option"
+                android:background="@drawable/rounded_greycolor"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btn_post_answer"
+                android:layout_toLeftOf="@id/btn_share"
+                android:layout_toRightOf="@id/btn_like"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Post an Answer"
+                android:textSize="14sp"
+                android:textColor="@color/colorDefault"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_edittext"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

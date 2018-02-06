@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="magicalcamera-5.0.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/78ae16b6b0d81dc05d8733916fb47455075ffa6a/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/78ae16b6b0d81dc05d8733916fb47455075ffa6a/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.frosquivel/magicalcamera/5.0.5/12158eb84b0c1aee79a0b0cc220c5e7cd713813/magicalcamera-5.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

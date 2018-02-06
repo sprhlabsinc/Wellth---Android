@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_wrapper"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <agency.tango.android.avatarview.views.AvatarView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    app:av_border_color="@android:color/white"
+                    app:av_border_width="2dp"
+                    app:av_text_size_percentage="35"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/img_avatar"
+                    android:orientation="vertical"
+                    tools:ignore="RelativeOverlap,RtlHardcoded">
+
+                    <TextView
+                        android:id="@+id/txt_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorDefault"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/txt_post_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="@android:color/darker_gray"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_answers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="0 Answers"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view_bar"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/layout_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <cn.jzvd.JZVideoPlayerStandard
+                    android:id="@+id/videoplayer"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+
+                <ImageView
+                    android:id="@+id/img_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/ic_logo"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_question_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Q )"
+                    android:textSize="26sp"
+                    android:textColor="@color/colorDefault"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+                <LinearLayout
+                    android:layout_toRightOf="@id/txt_question_mark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="RelativeOverlap,RtlHardcoded">
+                    <TextView
+                        android:id="@+id/txt_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:textColor="@color/colorDefault"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_like"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+                <ImageView
+                    android:layout_toLeftOf="@id/txt_like"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_like"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <ListView
+                    android:id="@+id/list_answer"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="RtlHardcoded">
+                </ListView>
+                <RelativeLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <ImageButton
+                        android:id="@+id/btn_like"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_like_1"
+                        android:background="@drawable/rounded_greycolor"
+                        tools:ignore="ContentDescription" />
+                    <ImageButton
+                        android:id="@+id/btn_share"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_share_option"
+                        android:background="@drawable/rounded_greycolor"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/btn_post_answer"
+                        android:layout_toLeftOf="@id/btn_share"
+                        android:layout_toRightOf="@id/btn_like"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Post an Answer"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorDefault"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:background="@drawable/rounded_edittext"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

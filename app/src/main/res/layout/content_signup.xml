@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.Activity.SignupActivity"
+    tools:showIn="@layout/activity_signup">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_logo"
+                    android:layout_centerHorizontal="true"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorDefault"
+                tools:ignore="HardcodedText" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_action_mail_outline"
+                tools:ignore="HardcodedText" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_action_person"
+                tools:ignore="HardcodedText" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_action_lock"
+                tools:ignore="HardcodedText" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_action_check_circle"
+                tools:ignore="HardcodedText" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                tools:ignore="RtlHardcoded">
+                <Button
+                    android:id="@+id/btn_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Country (Optional)"
+                    android:padding="12dip"
+                    android:gravity="left"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="50dp"
+                    tools:ignore="Deprecated,HardcodedText,RtlHardcoded,TextViewEdits" />
+                <ImageButton
+                    android:id="@+id/btn_country_why"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_question"
+                    android:background="@android:color/transparent"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                tools:ignore="RtlHardcoded">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edit_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dp"
+                    android:hint="Age (Optional)"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText" />
+                <ImageButton
+                    android:id="@+id/btn_age_why"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_question"
+                    android:background="@android:color/transparent"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/view_middle"
+                    android:layout_width="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="10dp" />
+                <Button
+                    android:layout_toLeftOf="@id/view_middle"
+                    android:id="@+id/btn_facebook"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:textSize="16sp"
+                    android:text="Facebook"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="@color/colorFacebook"
+                    tools:ignore="HardcodedText,RtlHardcoded,UnusedAttribute" />
+                <Button
+                    android:layout_toRightOf="@id/view_middle"
+                    android:id="@+id/btn_google"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:textSize="16sp"
+                    android:text="Google"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="@color/colorGoogle"
+                    tools:ignore="HardcodedText,RtlHardcoded,UnusedAttribute" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                tools:ignore="HardcodedText" />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btn_privacy"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms and Conditions"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textAllCaps="false"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btn_back"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textAllCaps="false"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
