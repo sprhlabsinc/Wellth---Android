@@ -56,15 +56,13 @@
     <string name="create_post_real_time">create_post_real_time</string>
     <string name="click_notification">click_notification</string>
 
-    <string name="parse_server_live_url">wss://wellth.back4app.io</string>
+    <string name="parse_server_live_url"></string>
     <string name="parse_server_url">https://parseapi.back4app.com/</string>
-    <string name="parse_app_id">Lgk1swICG2ohVVoXJilOskFPTrLlLHe4rOrQQ9KN</string>
-    <string name="parse_client_key">0mLrs1ngYFgkeDPBucLivCoQOvTiAit5AIPBHkcO</string>
+    <string name="parse_app_id"></string>
+    <string name="parse_client_key"></string>
 
-    <!--<string name="facebook_app_id">1650791844932037</string>-->
-    <!--<string name="facebook_security_key">cea380547fb4f64721e3fadb5f327f8b</string>-->
-    <string name="facebook_app_id">526629117677018</string>
-    <string name="fb_login_protocol_scheme">fb526629117677018</string>
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme"></string>
 
     <!--time ago-->
     <string name="date_util_term_less">less than</string>
